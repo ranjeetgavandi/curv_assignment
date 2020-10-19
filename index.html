@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel='stylesheet' type='text/css' href="css/global.css">
+    </head>
+    
+    <body>
+        <div class="wrapper">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="javascript:void(0)"><img src="images/logo.png" alt="Logo" class="w-100"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="javascript:void(0)navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dashboard
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle userLink mr-3" href="javascript:void(0)"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="text-dark"> Academis</span> <br> <span class=" small">MOOD (Change)</span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="javascript:void(0)">Admin Section</a>
+                  </div>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0 position-relative searchForm">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn my-2 my-sm-0  position-absolute" type="submit"><i class="fas fa-search text-black-50"></i></button>
+              </form>
+              <a href="javascript:void(0)" title="" class="d-inline-block mx-3"><i class="far fa-envelope text-dark"></i></a>
+              <a href="javascript:void(0)" title="" class="d-inline-block mr-3"><i class="far fa-bell text-dark"></i></a>
+              <img src="images/AddEmployeeIcon-Personal.jpg" alt="" width="35" class="d-inline-block align-top rounded-circle">
+            </div>
+          </nav>
+          <!-- Nav End here -->
+          <div class="container">            
+            <div class="d-block sidebar collapse">
+              <ul class="nav flex-column">
+                  <li><a href="javascript:void(0)" title="graduation" class="nav-link active mb-3"><i class="fas fa-graduation-cap fa-lg"></i></a></li>
+                  <li><a href="javascript:void(0)" title="comment" class="nav-link mb-3"><i class="far fa-comment-alt fa-lg"></i></a></li>
+                  <li><a href="javascript:void(0)" title="" class="nav-link mb-3"><i class="fas fa-user-circle fa-lg"></i></a></li>
+              </ul>
+          </div>
+          <!-- Sidebar end here -->
+            <div class="row">
+                <main class="col-md-12">
+                    <h2 class="pt-3">Edit Course</h2>
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb text-uppercase  px-0">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Edit Coures</li>
+                      </ol>
+                    </nav>
+                    <!-- Sections -->
+                    <h5 class="text-uppercase position-relative sectionHead mb-4"><span class="d-inline-block">Sections</span></h5>
+
+                    <div id="sectionsList" class="list-group accordion list">
+                      <div class="list-group-item mb-3 shadow-sm rounded">                        
+                        <div class="clearfix">
+                          <h3 class="float-left">Coures Overview</h3>
+                          <div class="float-right">
+                            <a href="javascript:void(0)" class="d-inline-block mr-3 accordinLink"><i class="fas fa-angle-down fa-lg"></i></a>
+                            <div class="mediaWrap d-inline-block">
+                              <a href="javascript:void(0)" title="Media"><i class="fas fa-ellipsis-h fa-lg"></i></a>
+                              <div class="mediaBox rounded">
+                                <span class="text-dark">+Media</span>
+                                <ul class="mediaList">
+                                  <li>
+                                    <a href="javascript:void(0)" title="Add Video" class="mediaLink"><i class="fas fa-video mr-3"></i> Add Video</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add PDF"><i class="fas fa-file-pdf mr-3"></i> Add PDF</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add PPT"><i class="fas fa-poll-h mr-3"></i> Add PPT</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add DOC"><i class="fas fa-trash mr-3"></i> Add DOC</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add Audio"><i class="fas fa-file-audio mr-3"></i> Add Audio</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add MCQ"><i class="fas fa-paste mr-3"></i> Add MCQ</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add Assignment"><i class="fas fa-file-alt mr-3"></i> Add Assignment</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add SCORM"><i class="fas fa-trash mr-3"></i> Add SCORM</a>
+                                </li>
+                                </ul>
+                              </div>
+                              <!-- media end here -->
+                            </div>
+                          </div>
+                        </div>
+                        <!-- inner tab -->
+                        <div class="accordinContent clearfix">
+                          <ul class="introductionList list" >
+                            <li><i class="fas fa-grip-lines"></i> Introduction <span class="ml-auto">8.53s</span></li>
+                            <li><i class="fas fa-grip-lines"></i> Introduction to typescript<span class="ml-auto">1.5min</span></li>
+                            <li><i class="fas fa-grip-lines"></i> Introduction to javascript <span class="ml-auto">58.10s</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- list-group-item end here -->
+                      <div class="addSectionWrap">                               
+                        <form class="addSectionForm">
+                          <div class="form-row">
+                            <div class="col-11">
+                              <input type="text" class="form-control sectionValue"  placeholder="Add Your Section Here">
+                            </div>
+                            <div class="col">
+                              <button type="button" class="addSection btn btn-primary">Add</button>
+                            </div>
+                          </div>
+                        </form>
+                        <!-- Add Your Section Here button -->
+                        <div class="btnWrap my-3 text-center position-relative">
+                          <button type="button" class="d-inline-block sectionLink rounded">Add Your Section Here</button>
+                        </div>
+                      </div>                    
+                      <!-- addSection Wrapper end here -->
+                      
+                      
+                      <div class="list-group-item mb-3 shadow-sm rounded">
+                        <div class="clearfix">
+                          <h3 class="float-left">Getting Started with Angular</h3>
+                          <div class="float-right">
+                            <a href="javascript:void(0)" class="d-inline-block mr-3 accordinLink"><i class="fas fa-angle-down fa-lg"></i></a>
+                            <div class="mediaWrap d-inline-block">
+                              <a href="javascript:void(0)" title="Media"><i class="fas fa-ellipsis-h fa-lg"></i></a>
+                              <div class="mediaBox rounded">
+                                <span class="text-dark">+Media</span>
+                                <ul class="mediaList">
+                                  <li>
+                                    <a href="javascript:void(0)" title="Add Video" class="mediaLink"><i class="fas fa-video mr-3"></i> Add Video</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add PDF"><i class="fas fa-file-pdf mr-3"></i> Add PDF</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add PPT"><i class="fas fa-poll-h mr-3"></i> Add PPT</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add DOC"><i class="fas fa-trash mr-3"></i> Add DOC</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add Audio"><i class="fas fa-file-audio mr-3"></i> Add Audio</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add MCQ"><i class="fas fa-paste mr-3"></i> Add MCQ</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add Assignment"><i class="fas fa-file-alt mr-3"></i> Add Assignment</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add SCORM"><i class="fas fa-trash mr-3"></i> Add SCORM</a>
+                                </li>
+                                </ul>
+                              </div>
+                              <!-- media end here -->
+                            </div>
+                          </div>
+                        </div>
+                        <!-- inner tabs -->
+                        <div class="accordinContent">
+                          <ul class="introductionList list" >
+                            <li><i class="fas fa-grip-lines"></i> Introduction <span class="ml-auto">8.53s</span></li>
+                            <li><i class="fas fa-grip-lines"></i> Introduction to typescript<span class="ml-auto">1.5min</span></li>
+                            <li><i class="fas fa-grip-lines"></i> Introduction to javascript <span class="ml-auto">58.10s</span></li>
+                          </ul>
+                        </div>
+                      </div>                      
+                      <!-- list-group-item end here -->
+                      <div class="addSectionWrap">                               
+                        <form class="addSectionForm">
+                          <div class="form-row">
+                            <div class="col-11">
+                              <input type="text" class="form-control sectionValue"  placeholder="Add Your Section Here">
+                            </div>
+                            <div class="col">
+                              <button type="button" class="addSection btn btn-primary">Add</button>
+                            </div>
+                          </div>
+                        </form>
+                        <!-- Add Your Section Here button -->
+                        <div class="btnWrap my-3 text-center position-relative">
+                          <button type="button" class="d-inline-block sectionLink rounded">Add Your Section Here</button>
+                        </div>
+                      </div>                    
+                      <!-- addSection Wrapper end here -->
+
+                      <div class="list-group-item mb-3 shadow-sm rounded">
+                        <div class="clearfix">
+                          <h3 class="float-left">Getting Started With React</h3>
+                          <div class="float-right">
+                            <a href="javascript:void(0)" class="d-inline-block mr-3 accordinLink"><i class="fas fa-angle-down fa-lg"></i></a>
+                            <div class="mediaWrap d-inline-block">
+                              <a href="javascript:void(0)" title="Media"><i class="fas fa-ellipsis-h fa-lg"></i></a>
+                              <div class="mediaBox rounded">
+                                <span class="text-dark">+Media</span>
+                                <ul class="mediaList">
+                                  <li>
+                                    <a href="javascript:void(0)" title="Add Video" class="mediaLink"><i class="fas fa-video mr-3"></i> Add Video</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add PDF"><i class="fas fa-file-pdf mr-3"></i> Add PDF</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add PPT"><i class="fas fa-poll-h mr-3"></i> Add PPT</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add DOC"><i class="fas fa-trash mr-3"></i> Add DOC</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add Audio"><i class="fas fa-file-audio mr-3"></i> Add Audio</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add MCQ"><i class="fas fa-paste mr-3"></i> Add MCQ</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add Assignment"><i class="fas fa-file-alt mr-3"></i> Add Assignment</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="Add SCORM"><i class="fas fa-trash mr-3"></i> Add SCORM</a>
+                                </li>
+                                </ul>
+                              </div>
+                              <!-- media end here -->
+                            </div>
+                          </div>
+                        </div>
+                        <!-- inner tabs -->
+                        <div class="accordinContent">
+                          <ul class="introductionList list" >
+                            <li><i class="fas fa-grip-lines"></i> Introduction <span class="ml-auto">8.53s</span></li>
+                            <li><i class="fas fa-grip-lines"></i> Introduction to typescript<span class="ml-auto">1.5min</span></li>
+                            <li><i class="fas fa-grip-lines"></i> Introduction to javascript <span class="ml-auto">58.10s</span></li>
+                          </ul>
+                          
+                        </div>
+                      </div>                      
+                      <!-- list-group-item end here -->
+                      <div class="addSectionWrap">                               
+                        <form class="addSectionForm">
+                          <div class="form-row">
+                            <div class="col-11">
+                              <input type="text" class="form-control sectionValue"  placeholder="Add Your Section Here">
+                            </div>
+                            <div class="col">
+                              <button type="button" class="addSection btn btn-primary">Add</button>
+                            </div>
+                          </div>
+                        </form>
+                        <!-- Add Your Section Here button -->
+                        <div class="btnWrap my-3 text-center position-relative">
+                          <button type="button" class="d-inline-block sectionLink rounded">Add Your Section Here</button>
+                        </div>
+                      </div>                    
+                      <!-- addSection Wrapper end here -->
+                    
+                      <div class="list-group-item mb-3 shadow-sm rounded">
+                        <div class="clearfix">
+                          <h3 class="float-left">Geetting Started with Angular </h3>
+                          <div class="float-right">
+                            <a href="javascript:void(0)" class="d-inline-block mr-3 accordinLink"><i class="fas fa-angle-down fa-lg"></i></a>
+                            <div class="mediaWrap d-inline-block">
+                              <a href="javascript:void(0)" title="Media"><i class="fas fa-ellipsis-h fa-lg"></i></a>
+                              <div class="mediaBox rounded">
+                                <span class="text-dark">+Media</span>
+                                <ul class="mediaList">
+                                  <li>
+                                      <a href="javascript:void(0)" title="Add Video" class="mediaLink"><i class="fas fa-video mr-3"></i> Add Video</a>
+                                  </li>
+                                  <li>
+                                      <a href="javascript:void(0)" title="Add PDF"><i class="fas fa-file-pdf mr-3"></i> Add PDF</a>
+                                  </li>
+                                  <li>
+                                      <a href="javascript:void(0)" title="Add PPT"><i class="fas fa-poll-h mr-3"></i> Add PPT</a>
+                                  </li>
+                                  <li>
+                                      <a href="javascript:void(0)" title="Add DOC"><i class="fas fa-trash mr-3"></i> Add DOC</a>
+                                  </li>
+                                  <li>
+                                      <a href="javascript:void(0)" title="Add Audio"><i class="fas fa-file-audio mr-3"></i> Add Audio</a>
+                                  </li>
+                                  <li>
+                                      <a href="javascript:void(0)" title="Add MCQ"><i class="fas fa-paste mr-3"></i> Add MCQ</a>
+                                  </li>
+                                  <li>
+                                      <a href="javascript:void(0)" title="Add Assignment"><i class="fas fa-file-alt mr-3"></i> Add Assignment</a>
+                                  </li>
+                                  <li>
+                                      <a href="javascript:void(0)" title="Add SCORM"><i class="fas fa-trash mr-3"></i> Add SCORM</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- media end here -->
+                            </div>
+                          </div>
+                        </div>
+                        <!-- inner tabs -->
+                        <div class="accordinContent">
+                          <ul class="introductionList list">
+                            <li><i class="fas fa-grip-lines"></i> Introduction1 <span class="ml-auto">8.53s</span></li>
+                            <li><i class="fas fa-grip-lines"></i> Introduction to typescript1<span class="ml-auto">1.5min</span></li>
+                            <li><i class="fas fa-grip-lines"></i> Introduction to javascript1 <span class="ml-auto">58.10s</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- list-group-item end here -->
+                      <div class="addSectionWrap">                               
+                        <form class="addSectionForm">
+                          <div class="form-row">
+                            <div class="col-11">
+                              <input type="text" class="form-control sectionValue"  placeholder="Add Your Section Here">
+                            </div>
+                            <div class="col">
+                              <button type="button" class="addSection btn btn-primary">Add</button>
+                            </div>
+                          </div>
+                        </form>
+                        <!-- Add Your Section Here button -->
+                        <div class="btnWrap my-3 text-center position-relative">
+                          <button type="button" class="d-inline-block sectionLink rounded">Add Your Section Here</button>
+                        </div>
+                      </div>                    
+                      <!-- addSection Wrapper end here -->
+
+                      <div class="list-group-item mb-3 shadow-sm rounded medaiWrap">
+                        <div class="clearfix mb-3">
+                          <h3 class="float-left"><i class="fas fa-grip-lines"></i> Introduction to typescript</h3>
+                          <div class="float-right">
+                            <span><i class="fas fa-plus"></i> Media</span>
+                          </div>
+                        </div>
+                        <h5 class="text-uppercase position-relative sectionHead mb-4"><span class="d-inline-block">Add a New Video</span></h5>
+                        <form>
+                        
+                          <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                  <label for="">Topic Name *</label>
+                                  <input type="text" class="form-control" id="" >
+                                </div>
+                                <div class="form-group row">
+                                  <div class="col-7">
+                                    <label for="">Video Source *</label>
+                                  <select class="custom-select" id="">
+                                    <option selected disabled value="">URL</option>
+                                    <option>http//google.com</option>
+                                  </select>
+                                  </div>
+                                  <div class="col-5 mt-3">
+                                    <div class="form-check mt-4">
+                                      <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                                      <label class="form-check-label" for="autoSizingCheck2">
+                                        Make Video Downloadable
+                                      </label>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                                <div class="form-group">
+                                  <label for="">Video Source *</label>
+                                  <textarea class="form-control" rows="10" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                              </div>
+                              <div class="col-md-5">
+                                <div class="embed-responsive embed-responsive-16by9 h-25">
+                                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                </div>
+                                <div class="card mb-4">
+                                  <div class="card-body">
+                                    <div class="form-group">
+                                      <label for="">URL</label>
+                                      <input type="text" class="form-control" id="" >
+                                      <small>Enter a vaild Video URL</small>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card mb-4">
+                                  <div class="card-body">
+                                    <div class="form-group">
+                                      <label for="">Tags</label>
+                                      <input type="text" class="form-control" placeholder="+Add Tags" id="" >
+                                    </div>
+                                  </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary float-right">Done</button>
+                              </div>                             
+                            
+                            </div>
+                      </form>
+                      </div>
+                      <!-- Media wrapper end here -->
+                    </div>
+
+                </main>
+            </div>
+          </div>
+          <!-- container-fluid end here -->
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+      <script src="js/script.js"></script>
+    </body>
+
+</html>

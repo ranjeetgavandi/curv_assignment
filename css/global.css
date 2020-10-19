@@ -1,0 +1,207 @@
+/* Variables */
+:root {
+    --body-bg-color: #f3f7fa;
+    --primary-font-color: #6c6e71; 
+    --primary-link-color: #6d6d72;
+    --heading-color: #273656;
+    --sidebar-color: #3b3e56;
+    --border-color: #dcdde0;
+    --accordin-head: #575859;
+    --add-section-color: #dfe0e4;
+    --add-section-hover-color: #5f67f7;
+    --link-hover-color: #333333;
+    --color-white: #ffffff;
+    --opaque-black: rgba(0, 0, 0, 0.2);
+    --opaque-black-dark: rgba(0, 0, 0, 0.7);
+    --opaque-white: rgba(255, 255, 255, 0.5);
+    --primary-blue: #3b8af8;
+    --primary-blue-hover: #2478ed;
+    --secondary-grey: #7a7a7e;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: var(--primary-font-color);
+  background: var(--body-bg-color);
+}
+/* make sure to set some focus styles for accessibility */
+a {
+    text-decoration: none;
+    color: var(--primary-link-color);
+}
+a:focus,
+a:active,
+a:hover {
+    outline: 0;
+    color: var(--link-hover-color);
+    text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+.wrapper h2 {
+    color: var(--heading-color);
+}
+.navbar-brand {
+    width: 38px;
+}
+.searchForm input {
+    padding-left: 36px;
+}
+.searchForm .btn:focus {
+    box-shadow: 0 0 0;
+}
+.userLink.dropdown-toggle {
+    line-height: 14px;
+}
+.userLink.dropdown-toggle::after {
+    vertical-align: top;
+}
+/* Sidebar------ */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 72px 0 0;
+    max-width: 70px;
+    background: var(--sidebar-color);
+}
+.sidebar li a:hover,
+.sidebar li a.active {
+    color: var(--color-white);
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    content: '>';
+}
+.sectionHead span,
+.btnWrap a {
+    background-color: var(--body-bg-color);
+    position: relative;
+    z-index: 1;
+    padding-right: 10px;
+}
+.sectionHead::after,
+.btnWrap::after {
+    position: absolute;
+    width: 100%;
+    content: '';
+    height: 2px;
+    background: var(--border-color);
+    left: 0;
+    top: 10px;
+}
+.list h3 {
+    font-size: 16px;
+    color: var(--accordin-head);
+}
+.btnWrap button {
+    background: var(--add-section-color);
+    padding: 5px 10px;
+    margin: 0 10px;
+    border: 0;
+
+}
+.btnWrap button:hover {
+    background: var( --add-section-hover-color);
+    color: var(--color-white);
+}
+.btnWrap::after {
+    border-top: 2px dashed var(--border-color);
+    background: transparent;
+    top: 15px;
+    z-index: -1;
+}
+/* .accordinLink.down i::before{    
+    content: "\f106";
+} */
+
+.introductionList li {
+    display: flex;    
+    border-bottom: 1px solid var(--border-color);
+    padding: 5px 0;
+    margin: 5px 0;
+}
+.introductionList i {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
+.mediaBox {
+    display: none;
+    position: absolute;
+    top: 10px;
+    z-index: 4;
+    background-color: var(--color-white);
+    border: 1px solid var(--border-color);
+    padding: 0 10px;
+}
+.mediaList a {
+    color: var(--accordin-head);
+    display: block;
+    padding: 10px;
+    white-space: nowrap;
+}
+.mediaList a:hover {
+    color: var(--link-hover-color);
+}
+.mediaWrap:hover .mediaBox {
+    display: block;
+}
+.list-group-item .sectionHead span {
+    background-color: var(--color-white);
+    font-size: 13px;
+    color: var(--link-hover-color);
+}
+.addSectionForm {
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    
+}
